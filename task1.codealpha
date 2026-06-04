@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+  float a, b, result;
+  int choice;
+    printf("----Arithmetic Operators----\n");
+    printf("Addition (+)\n");
+    printf("Subtraction (-)\n");
+    printf("Multiplication (*)\n");
+    printf("Division (/)\n");
+    scanf("%d",&choice);
+      switch(choice)
+      {
+        case1:
+          printf("\nResult:%.2f + %.2f = %.2f\n", num1, num2, num1+num2);
+          break;
+        case2:
+          printf("\nResult:%.2f - %.2f = %.2f\n", num1, num2, num1-num2);
+          break;
+        case3:
+          printf("\nResult:%.2f * %.2f = %.2f\n", num1, num2, num1*num2);
+          break;
+        case4:
+          if(num2==0) {
+           printf("\nError: Division by zero is not possible!\n");
+          }
+            else
+                {
+                  printf("\nResult:%.2f * %.2f = %.2f\n", num1, num2, num1*num2); 
+                } 
+          break;  
+         
+      default:
+          printf("\nInvalid choice! Please select 1 to 4.\n");
+    }
+  return 0;
+  
+}        
